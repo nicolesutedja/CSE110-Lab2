@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting minutes for the Pomodoro Timer team's first brainstorm session." />
+    <meta name="author" content="Nicole Sutedja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="lab2-favicon.png" />
+  </head>
+
+  <body>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <nav>
+        <a href="#meeting-info">Meeting Info</a> |
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#old-business">Old Business</a> |
+        <a href="#new-business">New Business</a> |
+        <a href="#misc">Misc / Q&amp;A</a> |
+        <a href="#media">Media</a> |
+        <a href="#feedback">Feedback Form</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+      <!-- Meeting Info Section -->
+      <section id="meeting-info">
+        <h2>Meeting Information</h2>
+
+        <h3>Topic: Initial Brainstorm &amp; Feature Planning</h3>
+        <h3>Date: April 8, 2026</h3>
+
+        <div id="meeting-intro">
+          <p>
+            This document serves as the official record of the <strong>Team 10's</strong>
+            first brainstorm session. <br> Anyone who missed the meeting should review these minutes to
+            catch up on decisions made and action items assigned. <br><em>All team members are expected
+            to review these notes before the next meeting.</em>
+          </p>
+          <p>
+            The team gathered to discuss the high-level architecture and feature set for our
+            upcoming <b>Pomodoro productivity app</b>. <br> Discussions were productive and several diagrams
+            were sketched on the whiteboard —
+             images are captured in the
+            <a href="#media">Media section</a> below.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Attendance Section -->
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <p>The following team members were present:</p>
+        <ul>
+          <li>Nicole Sutedja <em>(Team Lead)</em></li>
+          <li>Evan Marriott <em>(Team Lead)</em></li>
+          <li>Benedict Luis <em>(Frontend)</em></li>
+          <li>Bethany Miyamoto <em>(Backend)</em></li>
+          <li>Kaley Chung <em>(Design)</em></li>
+          <li>Han Yang-Lin <em>(QA / Testing)</em></li>
+        </ul>
+        <p><b>Absent:</b> Prakhar Shah (excused — medical appointment)</p>
+      </section>
+
+      <hr />
+
+      <!-- Agenda Section -->
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Welcome &amp; introductions</li>
+          <li>Review project requirements from spec doc</li>
+          <li>Brainstorm core features and user stories</li>
+          <li>Assigned initial roles and responsibilities</li>
+          <li>Set next meeting date &amp; location</li>
+          <li>Open Q&amp;A</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <!-- Old Business Section -->
+      <section id="old-business">
+        <h2>Old Business</h2>
+        <p>
+          The following items were carried over from previous discussions
+          (prior to this team's formation):
+        </p>
+        <ul>
+          <li>
+            <strong>Technology stack decision:</strong> still pending.
+            Candidates are React, Vue, or Vanilla JS.
+            <details>
+              <summary>View discussion notes</summary>
+              <p>
+                Ben and Evan debated the merits of React vs Vanilla JS for a small productivity
+                app. The consensus leaned toward <em>Vanilla JS</em> to keep the bundle small,
+                but a final vote will happen asynchronously in Slack.
+              </p>
+            </details>
+          </li>
+          <li>
+            <strong>Repository setup:</strong> GitHub org and repo need to be created by Nicole
+            before end of week.
+          </li>
+          <li>
+            <strong>Team working agreement:</strong> draft was sent but not yet signed off by Bethany.
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- New Business Section -->
+      <section id="new-business">
+        <h2>New Business</h2>
+
+        <h3>Core Features Discussed</h3>
+        <p>The team identified the following must-have features for the MVP:</p>
+        <ol>
+          <li>Configurable work / break timer (default 25 / 5 minutes)</li>
+          <li>Audio notification at the end of each interval</li>
+          <li>Session counter (track number of completed pomodoros)</li>
+          <li>Task list to associate with a session</li>
+          <li>Dark mode toggle</li>
+        </ol>
+
+        <h3>Architecture Overview</h3>
+        <p>
+          Kaley sketched a high-level architecture diagram on the whiteboard. <br>
+          The app will be a <strong>single-page application</strong> with three main
+          components: <em>Timer</em>, <em>Task Manager</em>, and <em>Settings Panel</em>.
+          See the <a href="#media">Media section</a> for the whiteboard photo.
+        </p>
+
+        <h3>Action Items</h3>
+        <ul>
+          <li><b>Evan:</b> finalize team working agreement — due April 10</li>
+          <li><b>Nicole:</b> create GitHub repo and add all members — due April 9</li>
+          <li><b>Bethany:</b> create initial HTML/CSS skeleton — due April 12</li>
+          <li><b>Kaley:</b> produce initial designs in Figma — due April 12</li>
+          <li><b>Han:</b> draft test plan outline — due April 14</li>
+        </ul>
+
+        <h3>Decisions Made</h3>
+        <p>
+          The team agreed by <strong>unanimous vote</strong> that the app will be built with
+          <em>Vanilla JS, HTML, and CSS only</em> — no frameworks for the initial MVP.
+          <br />
+          Next meeting is scheduled for <b>Wednesday, April 15 at 5:00 PM</b> via Zoom.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Misc / Q&A Section -->
+      <section id="misc">
+        <h2>Miscellaneous Comments, Questions &amp; Concerns</h2>
+
+        <p>The following items were raised during open discussion:</p>
+
+        <ul>
+          <li>
+            <strong>Bethany</strong> asked whether we need accessibility compliance (WCAG AA).
+            <br />
+            <em>Response:</em> Yes — Evan confirmed this is a grading requirement.
+          </li>
+          <li>
+            <strong>Kaley</strong> suggested adding an ambient sound feature (rain, white noise).
+            <br />
+            <em>Response:</em> Moved to the "nice-to-have" backlog for post-MVP consideration.
+          </li>
+          <li>
+            <strong>Han</strong> flagged a potential issue with timer accuracy when the browser
+            tab is in the background. <em>Action item: Han to research Web Workers as a fix.</em>
+          </li>
+        </ul>
+
+        <p>
+          All concerns have been logged in the team's shared GitHub Meeting notes.
+          Current status: <span><i>pending review by team leads</i></span>.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Media Section -->
+      <section id="media">
+        <h2>Media Section</h2>
+
+        <h3>Whiteboard Diagram</h3>
+        <img
+          src="whiteboard.png"
+          alt="Whiteboard diagram showing our planned proposal for the app."
+          width="600"
+        />
+
+        <h3>Audio Recording</h3>
+        <p>
+          A short audio recording of our planned User Interface and ideas for the app.
+        </p>
+        <audio controls>
+          <source src="user-interface.m4a" type="audio/mp4" />
+        </audio>
+
+        <h3>Video Recording</h3>
+        <p>
+          A short summary of what happened in the meeting.
+        </p>
+        <video controls width="600">
+          <source src="summary.mov" type="video/mp4" />
+        </video>
+      </section>
+
+      <hr />
+
+      <!-- ===== FEEDBACK FORM ===== -->
+      <section id="feedback">
+        <h2>Post-Meeting Feedback Form</h2>
+        <p>
+          Please fill out this brief form to share your thoughts about today's meeting.
+        </p>
+
+        <form>
+
+          <!-- Personal Info fieldset -->
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="full-name">Full Name:</label><br />
+            <input type="text" id="full-name" name="full-name" placeholder="e.g. Nicole Sutedja" /><br /><br />
+
+            <label for="meeting-date">Meeting Date:</label><br />
+            <input type="date" id="meeting-date" name="meeting-date" /><br /><br />
+
+            <label for="role">Your Role:</label><br />
+            <input type="text" id="role" name="role" list="role-options" placeholder="Start typing your role..." />
+            <datalist id="role-options">
+              <option value="Team Lead" />
+              <option value="Frontend Developer" />
+              <option value="Backend Developer" />
+              <option value="Designer" />
+              <option value="QA / Testing" />
+              <option value="Project Manager" />
+            </datalist>
+          </fieldset>
+
+
+          <!-- Topics Covered fieldset -->
+          <fieldset>
+            <legend>Topics Adequately Covered?</legend>
+            <p>Check all topics you feel were covered well:</p>
+
+            <input type="checkbox" id="check-arch" name="topics" value="architecture" />
+            <label for="check-arch">Architecture Overview</label><br />
+
+            <input type="checkbox" id="check-features" name="topics" value="features" />
+            <label for="check-features">Feature Planning</label><br />
+
+            <input type="checkbox" id="check-roles" name="topics" value="roles" />
+            <label for="check-roles">Role Assignments</label><br />
+
+            <input type="checkbox" id="check-timeline" name="topics" value="timeline" />
+            <label for="check-timeline">Timeline &amp; Deadlines</label><br />
+
+            <input type="checkbox" id="check-qa" name="topics" value="qa" />
+            <label for="check-qa">Q&amp;A / Open Discussion</label>
+          </fieldset>
+
+          <br />
+
+          <!-- Additional Comments fieldset -->
+          <fieldset>
+            <legend>Additional Comments</legend>
+
+            <label for="comments">Any other feedback?</label><br />
+            <textarea id="comments" name="comments" rows="5" cols="50"
+              placeholder="Share any additional thoughts, concerns, or suggestions here..."></textarea>
+
+            <br /><br />
+
+            <label for="follow-up">How would you like to be followed up with?</label><br />
+            <select id="follow-up" name="follow-up">
+              <option value="">-- Select an option --</option>
+              <option value="slack">Slack message</option>
+              <option value="email">Email</option>
+              <option value="none">No follow-up needed</option>
+            </select>
+          </fieldset>
+
+          <br />
+
+          <button type="submit">Submit Feedback</button>
+          <button type="reset">Clear Form</button>
+
+        </form>
+      </section>
+
+    </main>
+
+    <hr />
+
+    <!-- ===== PAGE FOOTER ===== -->
+    <footer>
+      <p>
+        <small>
+            CSE 110 Spring 2026 &mdash;
+            Minutes recorded by <strong>Nicole Sutedja</strong> <br>Any issues? Email Nicole Sutedja at <a href="mailto: nsutedja@ucsd.edu">nsutedja@ucsd.edu</a>
+        </small>
+      </p>
+      <p>
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
